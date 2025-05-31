@@ -8,7 +8,14 @@ const links = [
 ];
 ---
 
-<nav class="py-6">
+<nav class="relative py-6">
+    <!-- Brand section -->
+    <div class="absolute left-6 top-1/2 -translate-y-1/2 flex items-center gap-2">
+        <img src="/icon.svg" alt="Logo" class="w-6 h-6" />
+        <span class="text-lg font-semibold text-gray-800">Nigel Andrew</span>
+    </div>
+
+    <!-- Centered nav -->
     <ul class="flex justify-center">
         <li class="bg-gray-100 rounded-full px-3 py-2 flex gap-1 sm:gap-3 shadow-sm border border-gray-200">
             {links.map(link => {
