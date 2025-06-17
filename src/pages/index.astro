@@ -7,14 +7,17 @@ const { title = "Home" } = Astro.props;
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
     <title>{title}</title>
 </head>
 <body>
 <header>
     <NavBar />
 </header>
-<main>
-    <slot />
+<main class="flex flex-col items-center justify-center text-center py-20 px-4">
+    <h1 class="text-4xl font-bold mb-4">Nigel Andrew</h1>
+    <p class="text-xl text-gray-700 mb-6">Software Development Manager &amp; Tech Enthusiast</p>
+    <a href="/work" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition-colors">View My Work</a>
 </main>
 </body>
 </html>
